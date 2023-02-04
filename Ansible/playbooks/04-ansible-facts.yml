@@ -1,0 +1,14 @@
+---
+- hosts: dev
+  tasks:
+    - name: Kernel
+      debug: msg="{{ ansible_kernel }}"
+    - name: Kernel
+      debug: msg="{{ ansible_hostname }}"
+    - name: Kernel
+      debug: msg="{{ ansible_distribution }}"
+    # - debug: var=hostvars
+    - debug: var=ansible_architecture
+    - debug: var=inventory_hostname
+    - debug: var=groups
+    - debug: var=group_names
